@@ -176,7 +176,7 @@ class Data:
             if(event.button == MOUSE_LEFT):
 
                 ### 마우스로 지점명을 클릭하면 ###
-                for i in range(self.name_page, self.name_page + 22):
+                for i in range(self.name_page, self.name_page + 5):
                     if(self.collide(mx, my, 190, 550 + (i * 30) - (self.name_page * 30), 100, 30)):
                         self.name_KeyCheck = i # 어떤 것이 선택되었는지 알려준다.
                         
@@ -187,7 +187,7 @@ class Data:
                             self.angle_select = False
                             
                 ### 마우스로 1월~12월을 클릭하면 ###
-                for i in range(self.month_page, self.month_page + 12):
+                for i in range(self.month_page, self.month_page + 5):
                     if(self.collide(mx, my, 390, 550 + (i * 30) - (self.month_page * 30), 100, 30)):
                         self.month_KeyCheck = i # 어떤 것이 선택되었는지 알려준다.
                         
